@@ -1,0 +1,15 @@
+{
+  "name": "crevna_2.0",
+  "version": "2.0.0",
+  "description": "Sitio web empresarial de Crevna",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "crevna_2"
+  },
+  "author": "Juan Sebastian Varona Parra",
+  "license": "ISC"
+}
