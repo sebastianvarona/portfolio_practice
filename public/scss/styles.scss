@@ -1,0 +1,291 @@
+$background: #020712;
+$accent: #FF7A00;
+$circle2: rgb(0, 68, 131);
+$light: rgba(255,255,255,1);
+
+body{
+    background-color: $background;
+    font-family: 'Comfortaa', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        position: absolute;
+        border-radius: 5px;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,.5);
+        transition: all ease .2s;
+        z-index: -1;
+    }
+    &:hover{
+        color: white;
+        &::before{
+            width: 100%;
+        }
+    }
+
+}   
+.contactoLi{
+        background-color: #ff7b0086;
+        color: white !important;
+        font-weight: bold;
+        position: relative;
+        border-radius: 10px;
+        padding: 2px 5px;
+        overflow: hidden;
+        &::before{
+            content: "";
+            width: 0;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #FF7A00;
+            transition: all ease .2s;
+            z-index: -1;
+        }
+        &:hover{
+            color: white;
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+.circulo{
+    width: 23%;
+    aspect-ratio: 1/1;
+    position: fixed;
+    border-radius: 50%;
+    animation: circulos ease 5s infinite;
+}
+.circulo1{
+    background-color: $circle2;
+    transform: translate(-20%,-20%);
+    opacity: 0.4;
+    box-shadow: $circle2 0px 0px 10px,
+                $circle2 0px 0px 20px,
+                $circle2 0px 0px 30px,
+                $circle2 0px 0px 40px,
+                $circle2 0px 0px 50px,
+                $circle2 0px 0px 60px,
+                $circle2 0px 0px 70px,
+                $circle2 0px 0px 80px,
+                $circle2 0px 0px 90px,
+                $circle2 0px 0px 100px,
+                $circle2 0px 0px 110px,
+                $circle2 0px 0px 120px,
+                $circle2 0px 0px 130px,
+                $circle2 0px 0px 140px,
+                $circle2 0px 0px 150px,
+                $circle2 0px 0px 160px,
+                $circle2 0px 0px 170px,
+                $circle2 0px 0px 180px,
+                $circle2 0px 0px 190px,
+                $circle2 0px 0px 200px;  
+}
+.circulo2{
+    right: 0;
+    bottom: 0;
+    background-color: $accent;
+    transform: translate(20%,20%);
+    opacity: 0.4;
+    box-shadow: $accent 0px 0px 10px,
+                $accent 0px 0px 20px,
+                $accent 0px 0px 30px,
+                $accent 0px 0px 40px,
+                $accent 0px 0px 50px,
+                $accent 0px 0px 60px,
+                $accent 0px 0px 70px,
+                $accent 0px 0px 80px,
+                $accent 0px 0px 90px,
+                $accent 0px 0px 100px,
+                $accent 0px 0px 110px,
+                $accent 0px 0px 120px,
+                $accent 0px 0px 130px,
+                $accent 0px 0px 140px,
+                $accent 0px 0px 150px,
+                $accent 0px 0px 160px,
+                $accent 0px 0px 170px,
+                $accent 0px 0px 180px,
+                $accent 0px 0px 190px,
+                $accent 0px 0px 200px;
+}
+@keyframes circulos{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold !important;
+}
+.btn{
+    background-color: rgba($accent, $alpha: 0.5);
+    color: $light;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px 15px;
+    overflow: hidden;
+    &::before{
+        content: "";
+        width: 0;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #FF7A00;
+        transition: all ease .2s;
+        z-index: -1;
+    }
+    &:hover{
+        color: white;
+        &::before{
+            width: 100%;
+        }
+    }
+}
+.content{
+    max-width: 1400px;
+    margin: auto;
+}
+.text-justify{
+    text-align: justify;
+}
+.servicios{
+    min-height: 50vh;
+    .iconoServicio{
+        position: relative;
+        .cuadro{
+            margin: auto;
+            max-height: 125px;
+            aspect-ratio: 1/1;
+            margin-bottom: 15px;
+            border: 4px solid rgba(158,158,158,1);
+            border-radius: 50%;
+            .img{
+                display: flex;
+                justify-content: center;
+                aspect-ratio: 1/1;
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+.tecnologias{
+    min-height: 50vh;
+    .rowTech{
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: auto;
+        .iconoTecnologia{
+            min-width: 120px;
+            width: 16.5%;
+            position: relative;
+            margin-bottom: 15px;
+            .img{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+.proceso{
+    min-height: 50vh;
+    .fProceso{
+        z-index: -1 !important;
+    }
+    .iconoProceso{
+        .cuadro{
+            margin: auto;
+            max-height: 125px;
+            aspect-ratio: 1/1;
+            margin-bottom: 15px;
+            background-color: rgba(255,255,255,.9);
+            border: 4px solid rgba(158,158,158,1);
+            border-radius: 50%;
+            .img{
+                display: flex;
+                justify-content: center;
+                aspect-ratio: 1/1;
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .info{
+        position: relative;
+        bottom: 25px;
+    }
+    .plan{
+        position: relative;
+        top: 110px;
+    }
+    .diseño{
+        position: relative;
+        bottom: 10px;
+    }
+    .desarrollo{
+        position: relative;
+        top: 115px;
+    }
+    .red{
+        position: relative;
+        top: 15px;
+    }
+}
+.banner, .acerca, .contacto{
+    min-height: 100vh;
+}
+.contacto{
+    form{
+        input, textarea{
+            background-color:rgba(255,255,255,.1);
+            transition: all ease 0.5s;
+        }
+    }
+    .whatsapp{
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+footer{
+    a{
+        text-decoration: none;
+    }
+}
+
+.spinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020712;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .5s;
+}
