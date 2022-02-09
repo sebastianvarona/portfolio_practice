@@ -22,8 +22,8 @@
             <span class="visually-hidden">Loading...</span>
           </div>
     </div>
-    <div class="circulo circulo1"></div>
-    <div class="circulo circulo2"></div>
+    <div id="circulo1" class="circulo circulo1"></div>
+    <div id="circulo2" class="circulo circulo2"></div>
     <div class="content position-relative">
         <header id="header">
             <nav id="navbar" class="navbar position-absolute w-100 py-5 navbar-expand-lg navbar-dark">
@@ -37,19 +37,19 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav w-100 ms-5">
                             <li class="nav-item ms-auto">
-                                <a class="nav-link enlaceMenu" href="#acerca">Acerca</a>
+                                <a class="nav-link enlaceMenu" href="#acerca">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link enlaceMenu" href="#servicios">Servicios</a>
+                                <a class="nav-link enlaceMenu" href="#servicios">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link enlaceMenu" href="#tecnologias">Tecnologías</a>
+                                <a class="nav-link enlaceMenu" href="#tecnologias">Technologies</a>
                             </li>
                             <li class="nav-item me-auto">
-                                <a class="nav-link enlaceMenu" href="#proceso">Proceso</a>
+                                <a class="nav-link enlaceMenu" href="#proceso">Process</a>
                             </li>
                             <li class="nav-item contactoLi ms-auto">
-                                <a class="nav-link" href="#contacto">Contacto</a>
+                                <a class="nav-link linkContacto" href="#contacto">Contact</a>
                             </li>
                     </div>
                 </div>
@@ -61,8 +61,7 @@
                 <div class="container-fluid px-4 pt-5 mt-5">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 id="titulo" class="titulo animate__animated animate__fadeInLeft display-3 text-light revealRAn">Creamos sitios memorables para tus
-                                clientes<span class="text-primary">.</span></h1>
+                            <h1 id="titulo" class="titulo animate__animated animate__fadeInLeft display-3 text-light revealRAn">We create memorable sites for your clients<span class="text-primary">.</span></h1>
                         </div>
                         <div class="col-lg-6"></div>
                     </div>
@@ -72,16 +71,11 @@
                 <div class="container-fluid px-4">
                     <div class="row">
                         <div class="col-md-6 revealR">
-                            <h2 class="display-4 pb-4 text-light">Entregamos la <br>mejor <span class="text-primary">calidad</span></h2>
+                            <h2 class="display-4 pb-4 text-light">We deliver the <br> best <span class="text-primary">quality</span></h2>
                             <p class="text-justify text-light">
-                                <span class="fs-4 fw-bold">crevna</span> se especializa en la creación profesional de
-                                sitios web
-                                únicos. Estamos
-                                constantemente pendientes a la aparición de nuevas tecnologías de desarrollo y diseño
-                                web para garantizar la entrega de sitios rápidos, eficientes y estéticos, haciéndolos
-                                modernos y de alta calidad y tecnología.
+                                <span class="fs-4 fw-bold">crevna</span> specializes in professional creation of unique websites. We are constantly awaiting the emergence of new web development and design technologies to ensure the delivery of fast, efficient and aesthetic sites, making them modern and of high quality and technology.
                             </p>
-                            <a class="btn" href="#servicios">Saber mas</a>
+                            <a class="btn" href="#servicios">Learn more</a>
                         </div>
                         <div class="col-md-6">
                             <div class="img w-75 ms-auto">
@@ -93,24 +87,24 @@
             </section>
             <section id="servicios" class="servicios pt-5">
                 <div class="container-fluid reveal px-4">
-                    <h2 class="display-4 text-center text-light pb-4">Nuestros servicios al dia<span class="text-primary">.</span>
+                    <h2 class="display-4 text-center text-light pb-4">Our services up to date<span class="text-primary">.</span>
                     </h2>
                     <div class="row justify-content-center">
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img src="assets/img/landing.svg" alt="Diseño">
+                                    <img src="assets/img/landing.svg" alt="Design">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Diseño</p>
+                            <p class="text-center text-light">Design</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img src="assets/img/desarrollo.svg" alt="Desarrollo">
+                                    <img src="assets/img/desarrollo.svg" alt="Development">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Desarrollo</p>
+                            <p class="text-center text-light">Development</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
                             <div class="cuadro">
@@ -123,10 +117,10 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img src="assets/img/correo.svg" alt="Correo">
+                                    <img src="assets/img/correo.svg" alt="Mail">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Correo</p>
+                            <p class="text-center text-light">Mail</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
                             <div class="cuadro">
@@ -139,17 +133,17 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img src="assets/img/mantenimiento.svg" alt="Mantenimiento">
+                                    <img src="assets/img/mantenimiento.svg" alt="Maintenance">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Mantenimiento</p>
+                            <p class="text-center text-light">Maintenance</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="tecnologias" class="tecnologias pt-5 ms-auto me-auto">
                 <div class="container-fluid reveal px-4">
-                    <h2 class="display-4 text-center text-light pb-4">Tecnologías<span class="text-primary">.</span></h2>
+                    <h2 class="display-4 text-center text-light pb-4">Technologies<span class="text-primary">.</span></h2>
                     <div class="row rowTech justify-content-center">
                         <div class="iconoTecnologia">
                             <div class="img">
@@ -222,7 +216,7 @@
             </section>
             <section id="proceso" class="proceso mb-5 py-5">
                 <div class="container-fluid reveal">
-                    <h2 class="display-4 text-center text-light titulo mt-5">Proceso<span class="text-primary">.</span></h2>
+                    <h2 class="display-4 text-center text-light titulo mt-5">Process<span class="text-primary">.</span></h2>
                     <div class="row escritorio position-relative d-lg-block d-none">
                         <div class="fProceso fProceso1 position-absolute">
                             <img class="w-100" src="./assets/img/fproceso.svg" alt="">
@@ -234,95 +228,95 @@
                             <div class="col-lg-2 col-4 iconoProceso info">
                                 <div class="cuadro">
                                     <div class="img">
-                                        <img class="h-100" src="assets/img/info.svg" alt="Recolección de información">
+                                        <img class="h-100" src="assets/img/info.svg" alt="Collection of information">
                                     </div>
                                 </div>
-                                <p class="text-center text-light">Recolección de <br>información</p>
+                                <p class="text-center text-light">Collection of <br>information</p>
                             </div>
                             <div class="col-lg-2 col-4 iconoProceso plan">
                                 <div class="cuadro">
                                     <div class="img">
-                                        <img class="h-100" src="assets/img/plan.svg" alt="Planeación">
+                                        <img class="h-100" src="assets/img/plan.svg" alt="Planning">
                                     </div>
                                 </div>
-                                <p class="text-center text-light">Planeación</p>
+                                <p class="text-center text-light">Planning</p>
                             </div>
                             <div class="col-lg-2 col-4 iconoProceso diseño">
                                 <div class="cuadro">
                                     <div class="img">
-                                        <img class="h-100" src="assets/img/diseno3.svg" alt="Diseño">
+                                        <img class="h-100" src="assets/img/diseno3.svg" alt="Design">
                                     </div>
                                 </div>
-                                <p class="text-center text-light">Diseño</p>
+                                <p class="text-center text-light">Design</p>
                             </div>
                             <div class="col-lg-2 col-4 iconoProceso desarrollo">
                                 <div class="cuadro">
                                     <div class="img">
-                                        <img class="h-100" src="assets/img/desarrollo2.svg" alt="Desarrollo">
+                                        <img class="h-100" src="assets/img/desarrollo2.svg" alt="Development">
                                     </div>
                                 </div>
-                                <p class="text-center text-light">Desarrollo</p>
+                                <p class="text-center text-light">Development</p>
                             </div>
                             <div class="col-lg-2 col-4 iconoProceso red">
                                 <div class="cuadro">
                                     <div class="img">
-                                        <img class="h-100" src="assets/img/lanzamiento.svg" alt="Lanzamiento a la red">
+                                        <img class="h-100" src="assets/img/lanzamiento.svg" alt="Deployment">
                                     </div>
                                 </div>
-                                <p class="text-center text-light">Lanzamiento a <br>la red</p>
+                                <p class="text-center text-light">Deployment</p>
                             </div>
                         </div>
 
                     </div>
                     <div class="row movil d-flex d-lg-none justify-content-center">
-                        <div class="col-4 iconoProceso info">
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso info">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img class="h-100" src="assets/img/info.svg" alt="Recolección de información">
+                                    <img class="h-100" src="assets/img/info.svg" alt="Collection of information">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Recolección de <br>información</p>
+                            <p class="text-center text-light">Collection of <br>information</p>
                         </div>
-                        <div class="col-4 iconoProceso plan">
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso plan">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img class="h-100" src="assets/img/plan.svg" alt="Planeación">
+                                    <img class="h-100" src="assets/img/plan.svg" alt="Planning">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Planeación</p>
+                            <p class="text-center text-light">Planning</p>
                         </div>
-                        <div class="col-4 iconoProceso diseño">
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso diseño">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img class="h-100" src="assets/img/diseño3.svg" alt="Diseño">
+                                    <img class="h-100" src="assets/img/diseno3.svg" alt="Design">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Diseño</p>
+                            <p class="text-center text-light">Design</p>
                         </div>
-                        <div class="col-4 iconoProceso desarrollo">
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso desarrollo">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img class="h-100" src="assets/img/desarrollo2.svg" alt="Desarrollo">
+                                    <img class="h-100" src="assets/img/desarrollo2.svg" alt="Development">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Desarrollo</p>
+                            <p class="text-center text-light">Development</p>
                         </div>
-                        <div class="col-4 iconoProceso red">
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso red">
                             <div class="cuadro">
                                 <div class="img">
-                                    <img class="h-100" src="assets/img/lanzamiento.svg" alt="Lanzamiento a la red">
+                                    <img class="h-100" src="assets/img/lanzamiento.svg" alt="Deployment">
                                 </div>
                             </div>
-                            <p class="text-center text-light">Lanzamiento a <br>la red</p>
+                            <p class="text-center text-light">Deployment</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="contacto" class="contacto d-flex align-items-center">
                 <div class="container-fluid px-4">
-                    <h2 class="display-4 text-center text-light">Contacto<span class="text-primary">.</span></h2>
-                    <p class="text-center text-light mb-4">Contáctanos para poder conocerte a ti o a tu empresa mejor <br>
-                        para así poder darte una experiencia y un proyecto único.</p>
+                    <h2 class="display-4 text-center text-light">Contact<span class="text-primary">.</span></h2>
+                    <p class="text-center text-light mb-4">Contact us to get to know you or your company better <br>
+                        in order to give you an experience and a unique project.</p>
                     <div class="row pt-4">
                         <div class="col-md-6 d-flex align-items-center">
                             <div class="img w-75 me-auto ms-auto">
@@ -330,26 +324,24 @@
                             </div>
                         </div>
                         <div class="col-md-6 revealL">
-                            <form class="w-100 contact-form" action="contactForm.php" method="post">
+                            <form class="w-100 contact-form" action="/sent" method="post">
                                 <div class="mb-3">
-                                    <label for="Nombre" class="form-label text-light">Nombre / Empresa:</label>
+                                    <label for="Nombre" class="form-label text-light">Name / Company:</label>
                                     <input type="text" class="form-control" name="name" id="Nombre"
                                         aria-describedby="nameHelp">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="correo-electronico" class="form-label text-light">Correo:</label>
+                                    <label for="correo-electronico" class="form-label text-light">Email:</label>
                                     <input type="email" class="form-control" name="mail" id="correo-electronico"
                                         aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con
-                                        terceros.
-                                    </div>
+                                    <div id="emailHelp" class="form-text text-muted">We will never share your email with third parties.</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje:</label>
+                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Message:</label>
                                     <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
                                         rows="3"></textarea>
                                 </div>
-                                <button type="submit" name="submit" class="btn">Enviar</button>
+                                <button type="submit" name="submit" class="btn">Send</button>
                                 <div class="mb-3 mt-5 d-flex">
                                     <a target="blank" href="https://wa.me/message/HLOZVDSWOYDPM1" class="whatsapp ms-auto fs-4 text-light btn">Whatsapp<i class="bi bi-whatsapp fs-4 ms-3"></i></a>
 
@@ -362,13 +354,13 @@
         </main>
         <footer class="py-4 mt-5">
             <div class="container-fluid px-5">
-                <div class="row justify-content-center">
-                    <div class="col-6">
+                <div class="row flex-wrap-reverse justify-content-center">
+                    <div class="col-sm-6 mb-sm-0 mb-5 col-12">
                         <a class="footerLink text-light fw-bold fs-1" href="#header">crevna</a>
-                        <p class="text-muted">© Todos los derechos reservados 2021</p>
+                        <p class="text-muted">© All rights reserved 2021</p>
                     </div>
-                    <div class="col-6">
-                        <h3 class="mt-3 text-light">Correo</h3>
+                    <div class="col-sm-6 col-12">
+                        <h3 class="mt-3 text-light">Mail</h3>
                         <div class="img">
                             <img src="./assets/img/contacto@crevna.com.svg" alt="">
                         </div>
@@ -376,17 +368,11 @@
                 </div>
             </div>
         </footer>
-
-
     </div>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
     <script>
         const spinner = document.querySelector('.spinner');
         window.addEventListener('load', () => {
@@ -395,6 +381,7 @@
         })
     </script>
     <script src="js/navigation.js"></script>
+    <script src="js/parallax.js"></script>
 
 </body>
 

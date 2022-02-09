@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/custom.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Crevna</title>
+</head>
+
+<body>
+    <div class="spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+          </div>
+    </div>
+    <div id="circulo1" class="circulo circulo1"></div>
+    <div id="circulo2" class="circulo circulo2"></div>
+    <div class="content position-relative">
+        <header id="header">
+            <nav id="navbar" class="navbar position-absolute w-100 py-5 navbar-expand-lg navbar-dark">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand fw-bold fs-2" href="#header">crevna</a>
+                    <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav w-100 ms-5">
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link enlaceMenu" href="#acerca">Acerca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link enlaceMenu" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link enlaceMenu" href="#tecnologias">Tecnologías</a>
+                            </li>
+                            <li class="nav-item me-auto">
+                                <a class="nav-link enlaceMenu" href="#proceso">Proceso</a>
+                            </li>
+                            <li class="nav-item contactoLi ms-auto">
+                                <a class="nav-link linkContacto" href="#contacto">Contacto</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <main>
+            <section class="banner pt-5 d-flex align-items-center">
+                <div class="container-fluid px-4 pt-5 mt-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 id="titulo" class="titulo animate__animated animate__fadeInLeft display-3 text-light revealRAn">Creamos sitios memorables para tus
+                                clientes<span class="text-primary">.</span></h1>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="acerca" class="acerca d-flex align-items-center">
+                <div class="container-fluid px-4">
+                    <div class="row">
+                        <div class="col-md-6 revealR">
+                            <h2 class="display-4 pb-4 text-light">Entregamos la <br>mejor <span class="text-primary">calidad</span></h2>
+                            <p class="text-justify text-light">
+                                <span class="fs-4 fw-bold">crevna</span> se especializa en la creación profesional de
+                                sitios web
+                                únicos. Estamos
+                                constantemente pendientes a la aparición de nuevas tecnologías de desarrollo y diseño
+                                web para garantizar la entrega de sitios rápidos, eficientes y estéticos, haciéndolos
+                                modernos y de alta calidad y tecnología.
+                            </p>
+                            <a class="btn" href="#servicios">Saber mas</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img w-75 ms-auto">
+                                <img class="w-75 opacity-75" src="assets/img/browser_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="servicios" class="servicios pt-5">
+                <div class="container-fluid reveal px-4">
+                    <h2 class="display-4 text-center text-light pb-4">Nuestros servicios al dia<span class="text-primary">.</span>
+                    </h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img src="assets/img/landing.svg" alt="Diseño">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Diseño</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img src="assets/img/desarrollo.svg" alt="Desarrollo">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Desarrollo</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img src="assets/img/ecommerce.svg" alt="Ecommerce">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Ecommerce</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img src="assets/img/correo.svg" alt="Correo">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Correo</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img src="assets/img/hosting.svg" alt="Hosting">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Hosting</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 iconoServicio">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img src="assets/img/mantenimiento.svg" alt="Mantenimiento">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Mantenimiento</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tecnologias" class="tecnologias pt-5 ms-auto me-auto">
+                <div class="container-fluid reveal px-4">
+                    <h2 class="display-4 text-center text-light pb-4">Tecnologías<span class="text-primary">.</span></h2>
+                    <div class="row rowTech justify-content-center">
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/1.svg" alt="html5">
+                            </div>
+                            <p class="text-center text-light">html5</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/2.svg" alt="css3">
+                            </div>
+                            <p class="text-center text-light">css3</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/3.svg" alt="JavaScript">
+                            </div>
+                            <p class="text-center text-light">JavaScript</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/4.svg" alt="Bootstrap">
+                            </div>
+                            <p class="text-center text-light">Bootstrap</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/5.svg" alt="JQuery">
+                            </div>
+                            <p class="text-center text-light">JQuery</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/6.svg" alt="Sass">
+                            </div>
+                            <p class="text-center text-light">Sass</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/7.svg" alt="Git">
+                            </div>
+                            <p class="text-center text-light">Git</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/8.svg" alt="Github">
+                            </div>
+                            <p class="text-center text-light">Github</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/9.svg" alt="Wordpress">
+                            </div>
+                            <p class="text-center text-light">Wordpress</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/nodejs.svg" alt="Node JS">
+                            </div>
+                            <p class="text-center text-light">Node JS</p>
+                        </div>
+                        <div class="iconoTecnologia">
+                            <div class="img">
+                                <img class="h-100" src="assets/img/mysql.svg" alt="MySql">
+                            </div>
+                            <p class="text-center text-light">MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="proceso" class="proceso mb-5 py-5">
+                <div class="container-fluid reveal">
+                    <h2 class="display-4 text-center text-light titulo mt-5">Proceso<span class="text-primary">.</span></h2>
+                    <div class="row escritorio position-relative d-lg-block d-none">
+                        <div class="fProceso fProceso1 position-absolute">
+                            <img class="w-100" src="./assets/img/fproceso.svg" alt="">
+                        </div>
+                        <div class="fProceso position-absolute">
+                            <img class="w-100" src="./assets/img/fproceso2.svg" alt="">
+                        </div>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-lg-2 col-4 iconoProceso info">
+                                <div class="cuadro">
+                                    <div class="img">
+                                        <img class="h-100" src="assets/img/info.svg" alt="Recolección de información">
+                                    </div>
+                                </div>
+                                <p class="text-center text-light">Recolección de <br>información</p>
+                            </div>
+                            <div class="col-lg-2 col-4 iconoProceso plan">
+                                <div class="cuadro">
+                                    <div class="img">
+                                        <img class="h-100" src="assets/img/plan.svg" alt="Planeación">
+                                    </div>
+                                </div>
+                                <p class="text-center text-light">Planeación</p>
+                            </div>
+                            <div class="col-lg-2 col-4 iconoProceso diseño">
+                                <div class="cuadro">
+                                    <div class="img">
+                                        <img class="h-100" src="assets/img/diseno3.svg" alt="Diseño">
+                                    </div>
+                                </div>
+                                <p class="text-center text-light">Diseño</p>
+                            </div>
+                            <div class="col-lg-2 col-4 iconoProceso desarrollo">
+                                <div class="cuadro">
+                                    <div class="img">
+                                        <img class="h-100" src="assets/img/desarrollo2.svg" alt="Desarrollo">
+                                    </div>
+                                </div>
+                                <p class="text-center text-light">Desarrollo</p>
+                            </div>
+                            <div class="col-lg-2 col-4 iconoProceso red">
+                                <div class="cuadro">
+                                    <div class="img">
+                                        <img class="h-100" src="assets/img/lanzamiento.svg" alt="Lanzamiento a la red">
+                                    </div>
+                                </div>
+                                <p class="text-center text-light">Lanzamiento a <br>la red</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row movil d-flex d-lg-none justify-content-center">
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso info">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img class="h-100" src="assets/img/info.svg" alt="Recolección de información">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Recolección de <br>información</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso plan">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img class="h-100" src="assets/img/plan.svg" alt="Planeación">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Planeación</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso diseño">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img class="h-100" src="assets/img/diseno3.svg" alt="Diseño">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Diseño</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso desarrollo">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img class="h-100" src="assets/img/desarrollo2.svg" alt="Desarrollo">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Desarrollo</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 iconoProceso red">
+                            <div class="cuadro">
+                                <div class="img">
+                                    <img class="h-100" src="assets/img/lanzamiento.svg" alt="Lanzamiento a la red">
+                                </div>
+                            </div>
+                            <p class="text-center text-light">Lanzamiento a <br>la red</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contacto" class="contacto d-flex align-items-center">
+                <div class="container-fluid px-4">
+                    <h2 class="display-4 text-center text-light">Contacto<span class="text-primary">.</span></h2>
+                    <p class="text-center text-light mb-4">Contáctanos para poder conocerte a ti o a tu empresa mejor <br>
+                        para así poder darte una experiencia y un proyecto único.</p>
+                    <div class="row pt-4">
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="img w-75 me-auto ms-auto">
+                                <img class="w-100 opacity-75" src="./assets/img/contacto.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 revealL">
+                            <form class="w-100 contact-form" action="/enviado" method="post">
+                                <div class="mb-3">
+                                    <label for="Nombre" class="form-label text-light">Nombre / Empresa:</label>
+                                    <input type="text" class="form-control" name="name" id="Nombre"
+                                        aria-describedby="nameHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo-electronico" class="form-label text-light">Correo:</label>
+                                    <input type="email" class="form-control" name="mail" id="correo-electronico"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con
+                                        terceros.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje:</label>
+                                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
+                                        rows="3"></textarea>
+                                </div>
+                                <button type="submit" name="submit" class="btn">Enviar</button>
+                                <div class="mb-3 mt-5 d-flex">
+                                    <a target="blank" href="https://wa.me/message/HLOZVDSWOYDPM1" class="whatsapp ms-auto fs-4 text-light btn">Whatsapp<i class="bi bi-whatsapp fs-4 ms-3"></i></a>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="py-4 mt-5">
+            <div class="container-fluid px-5">
+                <div class="row flex-wrap-reverse justify-content-center">
+                    <div class="col-sm-6 mb-sm-0 mb-5 col-12">
+                        <a class="footerLink text-light fw-bold fs-1" href="#header">crevna</a>
+                        <p class="text-muted">© Todos los derechos reservados 2021</p>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <h3 class="mt-3 text-light">Correo</h3>
+                        <div class="img">
+                            <img src="./assets/img/contacto@crevna.com.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const spinner = document.querySelector('.spinner');
+        window.addEventListener('load', () => {
+            spinner.style.opacity = "0";
+            spinner.style.display = 'none'
+        })
+    </script>
+    <script src="js/navigation.js"></script>
+    <script src="js/parallax.js"></script>
+
+</body>
+
+</html>

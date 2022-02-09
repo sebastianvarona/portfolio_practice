@@ -26,7 +26,6 @@ app.get('/enviado', (req,res) => {
     res.render('enviado');
 });
 app.post('/enviado', async(req,res) => {
-    console.log(req.body);
     const { nombre, mail, mensaje } = req.body;
     contentHTML = `
     <h1>Cliente Web Necesita Info</h1>
@@ -38,17 +37,17 @@ app.post('/enviado', async(req,res) => {
     `;
 
     const transporter = nodemailer.createTransport({
-        host: 'mail.crevna.com',
-        port: 26,
+        host: process.env.HOST,
+        port: 465,
         secure: true,
         auth: {
             user: process.env.USER,
-            pass: process.env.PASSWORD
+            pass: process.env.PASS
         }
     });
     const info = await transporter.sendMail({
-        from: `${nombre} <${mail}>`,
-        to: process.env.USER,
+        from: 'Crevna Server <form1@crevna.com>',
+        to: process.env.REMITENTE,
         subject: 'Cliente Web Necesita Info',
         html: contentHTML
 
@@ -70,17 +69,17 @@ app.post('/sent', async(req,res) => {
     `;
 
     const transporter = nodemailer.createTransport({
-        host: 'mail.crevna.com',
-        port: 26,
+        host: process.env.HOST,
+        port: 465,
         secure: true,
         auth: {
             user: process.env.USER,
-            pass: process.env.PASSWORD
+            pass: process.env.PASS
         }
     });
     const info = await transporter.sendMail({
-        from: `${nombre} <${mail}>`,
-        to: process.env.USER,
+        from: 'Crevna Server <form1@crevna.com>',
+        to: process.env.REMITENTE,
         subject: 'Web Client Needs Info',
         html: contentHTML
 
